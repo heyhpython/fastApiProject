@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 
+from user_module.router import router as user_router
+
 app = FastAPI()
+
+app.include_router(user_router, tags=["user"])
 
 
 @app.get("/")

@@ -9,3 +9,13 @@ GET http://127.0.0.1:8000/hello/User
 Accept: application/json
 
 ###
+#user
+
+POST http://127.0.0.1:8000/users
+content-type: application/json
+Accept: application/json
+{
+  "username": "User",
+  "email": "12@qq.com",
+  "hashed_password":"123131"
+}
